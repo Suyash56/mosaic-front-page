@@ -1,0 +1,261 @@
+.app_brand {
+  height: 692px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app_brand_title {
+  display: flex;
+  justify-content: center;
+}
+
+.brand_title {
+  /* New Launches */
+  width: 257px;
+  height: 44px;
+  font-family: Serifa Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #333333;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 8px;
+  width: 358px;
+  height: 48px;
+  background: #f6f6f6;
+  border-radius: 40px;
+}
+
+.launches {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  color: #000000;
+}
+
+.products {
+  width: auto;
+  height: 552px;
+  margin-top: 20px;
+}
+
+.product_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px;
+}
+
+.card {
+  position: relative;
+  width: 346px;
+  height: 489px;
+  margin-right: 20px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 10px;
+  position: absolute;
+  width: 99px;
+  height: 24px;
+  left: -3px;
+  top: 17px;
+  background: #66509a;
+  color: white;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 10px;
+  position: absolute;
+  width: 58px;
+  height: 24px;
+  left: -3px;
+  top: 246px;
+  background: #000000;
+  color: white;
+}
+
+.card_img {
+  height: 260px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card_title {
+  width: 311px;
+  height: 28px;
+  text-align: center;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.for {
+  height: 24px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.for_title {
+  width: 26px;
+  height: 16px;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-family: Hack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+
+  /* Dark */
+
+  color: #000000;
+}
+
+.with {
+  height: 24px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+}
+
+.with_title {
+  width: 26px;
+  height: 16px;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-family: Hack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 5px;
+  width: 300px;
+  height: 40px;
+}
+
+.price span {
+  width: 70px;
+  height: 25px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 40px;
+  color: #030303;
+}
+
+.price p {
+  width: 34px;
+  margin: 4px;
+  text-decoration-line: line-through;
+  font-size: 12px;
+  color: #828282;
+  margin-right: 5px;
+}
+
+.price label {
+  color: #09864a;
+  width: 200px;
+  height: 22px;
+  margin-left: 10px;
+}
+
+.card_buttons {
+  display: flex;
+  flex-direction: row;
+  width: 346px;
+  height: 40px;
+}
+
+.addtocart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0px 54px;
+  background: #eeeeee;
+  border-radius: 0px 0px 0px 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buynow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0px 50px;
+  background: #000000;
+  color: white;
+  border-radius: 0px 0px 8px 0px;
+  cursor: pointer;
+}
+
+.skin {
+  background: black;
+  border-radius: 36px;
+  width: 114px;
+  height: 36px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .product_frame {
+    flex-direction: column;
+    height: auto;
+  } */
+  .card {
+    margin-bottom: 10px;
+  }
+  .app_brand_title {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .container {
+    width: 220px;
+  }
+  .skin {
+    width: 91px;
+  }
+}

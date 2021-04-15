@@ -1,0 +1,140 @@
+body {
+  font-family: Avenir, serif;
+}
+.app__header {
+  /* Header - Dark */
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 60px;
+  margin: 0 auto;
+  /* White */
+
+  background: black;
+
+  /* Text Color */
+  color: white;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+}
+
+.mobile_logo {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile_logo span {
+  width: 14px;
+  display: none;
+  height: 2px;
+  background: #fff;
+  margin: 0 0 7px;
+}
+
+.logo img {
+  height: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.header_frame {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  line-height: 20px;
+  flex: none;
+  align-self: center;
+  flex-grow: 0;
+}
+
+.frame_ul {
+  list-style: none;
+  padding: 0;
+}
+
+.frame_li {
+  margin: 0 10px;
+  float: left;
+  position: relative;
+  font-size: 16px;
+}
+
+.dropdown {
+  width: 10px;
+  display: inline-block;
+  height: 6px;
+  background: url(https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603525852/staging/Home/Images/down-icn.png)
+    no-repeat;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social_icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 24px 0 0;
+  flex: 0 0 24px;
+  cursor: pointer;
+}
+
+/* Media for logo */
+@media only screen and (max-width: 768px) {
+  .app__header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 50px;
+  }
+  .header_logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+  }
+  .mobile_logo {
+    display: block;
+  }
+  .mobile_logo span {
+    display: block;
+  }
+  .header_frame {
+    display: none;
+  }
+  .logo img {
+    width: 100px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .user_logo {
+    display: none;
+  }
+  .social_icon {
+    position: relative;
+    width: 104px;
+    height: 24px;
+    margin: 0px 10px;
+  }
+  .icons {
+    margin-left: 20px;
+  }
+}
