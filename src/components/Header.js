@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../images/logo.png";
-import vector from "../images/Vector.png";
 import userLogo from "../images/user.png";
 import basket from "../images/basket.png";
+import search from "../images/search.png";
+import whatsapp from "../images/whatsapp.png";
 
 import "../css/header.css";
 
@@ -15,7 +16,7 @@ export default function Header() {
           <span></span>
         </div>
         <div className="logo">
-          <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" />
+          <img src={logo} />
         </div>
       </div>
       <div className="header_frame">
@@ -31,12 +32,12 @@ export default function Header() {
       </div>
       <div className="icons">
         <div className="social_icon">
-          <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/u_search.svg" />
+          <img src={search} />
         </div>
         <div className="social_icon">
-          <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/WhastApp.svg" />
+          <img src={whatsapp} />
         </div>
-        <div className="social_icon user_logo" >
+        <div className="social_icon user_logo">
           <img src={userLogo} />
         </div>
         <div className="social_icon">
